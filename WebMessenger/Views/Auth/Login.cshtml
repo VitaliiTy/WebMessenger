@@ -1,0 +1,19 @@
+﻿@{
+	ViewData["Title"] = "Login";
+	var returnUrl = ViewData["returnUrl"] as string;
+	var errorMessage = TempData["Error"] as string;
+}
+
+
+<div class="login">
+	<form action="/login?returnUrl=@System.Net.WebUtility.UrlEncode(returnUrl)" method="post">
+		@if (!string.IsNullOrEmpty(errorMessage))
+		{
+			<label>@errorMessage</label>
+		}
+		<input type="text" name="username" placeholder="Username" required>
+		<input type="password" name="password" placeholder="Password" required>
+		<button type="submit">Login</button>
+		<label>Don't have an account? <a href="/Auth/Register">Register</a></label>
+	</form>
+</div>
