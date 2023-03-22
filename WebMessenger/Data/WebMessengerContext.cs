@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using WebMessenger.Models;
 
-namespace WebMessenger.Models
+namespace WebMessenger.Data
 {
     public partial class WebMessengerContext : DbContext
     {
