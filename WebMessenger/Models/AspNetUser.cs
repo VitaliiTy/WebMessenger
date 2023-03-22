@@ -19,11 +19,17 @@ namespace WebMessenger.Models
         public string? Email { get; set; }
         public string? NormalizedEmail { get; set; }
         public bool EmailConfirmed { get; set; }
+        public int? EmailConfirmationCode { get; set; }
+        public int? EmailConfirmationFailedCount { get; set; }
+        public DateTime? EmailConfirmationCodeExpiryDate { get; set; }
         public string? PasswordHash { get; set; }
         public string? SecurityStamp { get; set; }
         public string? ConcurrencyStamp { get; set; }
         public string? PhoneNumber { get; set; }
         public bool PhoneNumberConfirmed { get; set; }
+        public int? PhoneNumberConfirmationCode { get; set; }
+        public int? PhoneNumberConfirmationFailedCount { get; set; }
+        public DateTime? PhoneNumberConfirmationCodeExpiryDate { get; set; }
         public bool TwoFactorEnabled { get; set; }
         public DateTimeOffset? LockoutEnd { get; set; }
         public bool LockoutEnabled { get; set; }
