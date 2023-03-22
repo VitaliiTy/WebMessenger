@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using WebMessenger.Data;
-using WebMessenger.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
